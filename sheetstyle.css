@@ -1,105 +1,106 @@
-/* General Styles */
+/* ================================================
+   ESTILOS GENERALES
+================================================ */
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
+
+  /* Fondo en gradiente moderno */
   background: linear-gradient(135deg, #ca0d5c, #1095d3);
   color: #fff;
   text-align: center;
 }
 
-.spacer{
-  height: 50px; /* Ajusta la altura del espacio entre secciones */
+.spacer {
+  height: 50px;
 }
 
-/* Header */
+/* ================================================
+   HEADER
+================================================ */
 .header {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 30px 15px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
 }
 
 .header h1 {
-  font-size: 2.5em;
+  font-size: 2.7rem;
   margin: 0;
+  font-weight: 700;
 }
 
 .header p {
-  font-size: 1.2em;
+  font-size: 1.25rem;
   margin-top: 10px;
+  opacity: 0.9;
 }
 
-/* Section Titles */
+/* ================================================
+   TITULOS DE SECCIÓN
+================================================ */
 h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #1095d3;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+  color: #ffffff;
+  text-shadow: 0px 0px 8px rgba(0,0,0,0.5);
+  font-weight: 600;
 }
 
-/* Gallery Section */
-.gallery, .gallery2 {
-  margin-bottom: 30px;
+/* ================================================
+   SECCIONES DE GALERÍA
+================================================ */
+.gallery,
+.gallery2 {
+  margin: 20px auto 40px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Espaciado uniforme entre carruseles */
-  margin-top: 20px;
-  margin-bottom: 20px;
+  gap: 25px;
 }
 
+/* Carruseles alineados */
 .graphic-container,
 .graphic-container2 {
-  width: 80%;
-  margin: 0 auto; /* Centrar horizontalmente el contenido */
-  margin-bottom: 20px; /* Espaciado inferior */
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
   text-align: center;
 }
 
-.graphic-container2{
-  margin-top: 1em;
+.graphic-container2 {
+  margin-top: 1.5rem;
 }
 
+/* Espaciado vertical adicional entre carruseles de gallery2 */
 .gallery2 {
-  display: flex;
-  flex-direction: column;
-  gap: 170px; /* Espaciado vertical entre carruseles */
+  gap: 150px;
 }
 
-.carousel {
-  width: 100%; /* Garantiza que cada carrusel ocupe el 100% de su contenedor */
-  max-width: 800px; /* Limita el ancho máximo */
-  margin: 0 auto; /* Centra el carrusel horizontalmente */
-  margin-bottom: 20px; /* Espacio adicional debajo de cada carrusel */
-  border: 2px solid #007bff; /* Borde azul */
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+/* ================================================
+   CARRUSEL (compatible con Bootstrap 5)
+================================================ */
+.custom-carousel {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto 30px auto;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-.carousel img {
-  width: 100%; /* Ajusta las imágenes al ancho del carrusel */
-  height: auto; /* Mantén las proporciones */
+/* Imagenes */
+.custom-carousel img {
+  width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
-.carousel-control-next,
-.carousel-control-prev,
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-  color: #0e0d0d;
-}
-
-/* Footer */
-.footer {
-  background-color: rgba(0, 0, 0, 0.8);
-  padding: 10px;
-  margin-top: 20px;
-}
-
-.footer a {
-  color: #ffd700;
-  text-decoration: none;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
+/* Controles (flechas) */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter
